@@ -1,38 +1,106 @@
+/* APP */
+
+body {
+  background-color: rgb(16, 32, 44);
+}
+
 .App {
+  width: 35vw;
+  margin: auto;
+  background-color: aliceblue;
+  border-radius: 10px;
+  min-height: 80vh;
+  margin-top: 5%;
+}
+
+@media (max-width: 600px) {
+  .App {
+    width: 85vw;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    min-height: 80vh;
+    margin-top: 10%;
+  }
+}
+
+.App .Input,
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* APP ENDs */
+
+/* Heading */
+
+.navbar-heading {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 1.8rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  .navbar-heading {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Heading */
+
+/* Input */
+
+input {
+  width: 70%;
+  padding: 1%;
+  margin: 1%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;  
+
+  border: 0.5px solid rgb(192, 192, 192);
 }
 
-.App-link {
-  color: #61dafb;
+input:focus{
+    outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 600px) {
+  input {
+    width: 70%;
+    padding: 2%;
+    margin: 2%;
+    margin-bottom: 10%;
   }
 }
+
+/* Input */
+
+/* Item */
+
+.item-text {
+  display: inline;
+}
+
+.done {
+  margin-left: 10%;
+  margin-right: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+@media (max-width: 600px) {
+  .done {
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+/* Item */
